@@ -20,7 +20,7 @@ public class UserService {
 
     public List<User> getAllUsers(){
         List<User> users = new ArrayList<User>();
-        repository.findAll().forEach(user -> users.add(user));
+        repository.findAll().forEach(users::add);
         return users;
     }
 

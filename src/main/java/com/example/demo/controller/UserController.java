@@ -22,6 +22,7 @@ public class UserController {
     public List<User> query(){
         return userService.getAllUsers();
     }
+    
 
     @GetMapping("/user/{id}")
     public User getUserById(int id){
